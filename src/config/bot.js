@@ -463,6 +463,37 @@ export const botConfig = {
   },
 };
 
+// =========================
+// USER INFO COMMANDS (PFP & FM)
+// =========================
+userInfo: {
+  commands: {
+    pfp: {
+      enabled: true,
+      cooldown: 3,
+      description: "Mostra l'avatar di un utente"
+    },
+    fm: {
+      enabled: true,
+      cooldown: 3,
+      description: "Mostra cosa sta ascoltando un utente"
+    },
+    userinfo: {
+      enabled: true,
+      cooldown: 5,
+      description: "Mostra info complete di un utente"
+    }
+  },
+  avatarFormats: {
+    png: true,
+    jpg: true,
+    webp: true,
+    gif: true
+  },
+  maxAvatarSize: 4096,
+  showDownloadButtons: true
+},
+
 
 export function validateConfig(config) {
   const errors = [];
