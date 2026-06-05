@@ -504,7 +504,7 @@ userInfo: {
   },
   maxAvatarSize: 4096,
   showDownloadButtons: true
-},
+};
 
 
 export function validateConfig(config) {
